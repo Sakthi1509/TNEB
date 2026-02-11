@@ -1,70 +1,86 @@
-# 📊 NEB Analyzer – Smart Result Analysis System
+# ⚡ TNEB Analyzer – Smart Watt Meter & Electricity Bill Estimator
 
-NEB Analyzer is a web-based academic result analysis system designed to help institutions, teachers, and students analyze examination results efficiently. It provides clear insights into student performance, subject-wise analysis, and overall statistics through an intuitive dashboard.
-
----
-
-## 🚀 Features
-
-### 👨‍🎓 Student
-- Secure login
-- View individual exam results
-- Subject-wise marks breakdown
-- Performance summary
-- Download / view result reports
+TNEB Analyzer (WATT Meter) is a smart web-based electricity consumption and bill estimation system built using **Tamil Nadu Electricity Board (TNEB) slab rates**.  
+It allows users to add household devices, track energy usage, and calculate accurate monthly and yearly electricity bills with visual analytics.
 
 ---
 
-### 👩‍🏫 Teacher
-- Upload or manage student results
-- Analyze performance by:
-  - Subject
-  - Class / Batch
-  - Individual student
-- View pass / fail statistics
-- Identify top performers and weak areas
-- Export analysis data for reporting
+## 🚀 Key Features
+
+### 🔐 Authentication
+- Email & Password login
+- Google Sign-In
+- Password reset
+- Secure authentication using **Firebase Auth**
 
 ---
 
-### 🛡️ Admin
-- Manage users (Students / Teachers)
-- Approve or reject user access
-- Manage academic data
-- Monitor overall system statistics
+### ⚙️ Device Management
+- Add electrical devices with:
+  - Device name
+  - Power (Watts)
+  - Daily usage (Hours)
+- Edit & delete devices
+- Predefined common devices with auto wattage fill
+- All data saved per user using **Firebase Realtime Database**
 
 ---
 
-## 📈 Analysis Highlights
-- Subject-wise performance analysis
-- Student-wise comparison
-- Pass percentage calculation
-- Average & highest score identification
-- Clear tabular and graphical representation
+### 📊 Consumption Analysis
+- Daily, Monthly & Yearly energy usage (kWh)
+- Total monthly units calculation
+- TNEB slab-wise bill calculation
+- Billing breakdown by slab
+- Consumption level indicator:
+  - Low
+  - Moderate
+  - High
+
+---
+
+### 📈 Visual Analytics
+- Pie chart showing device-wise energy consumption
+- Animated consumption meter
+- Slab-wise cost breakdown
+- Energy-saving tips shown dynamically
+
+---
+
+### 💡 Energy Saving Tips
+- Random smart tips displayed after calculation
+- Helps users reduce electricity usage and bill amount
+
+---
+
+## 🧠 TNEB Slab Rates Used (Domestic – 2023)
+- First 100 units – Free
+- Next 100 units – ₹2.25/unit
+- Next 200 units – ₹4.50/unit
+- Next 100 units – ₹6.00/unit
+- Next 100 units – ₹8.00/unit
+- Next 400 units – ₹9.00/unit
+- Remaining units – ₹10.00/unit
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript
+- **UI Framework:** Bootstrap 5
+- **Animations:** Animate.css
+- **Icons:** Font Awesome, Bootstrap Icons
+- **Charts:** Chart.js
 - **Backend:** Firebase
-- **Database:** Cloud Firestore
-- **Authentication:** Firebase Auth
+  - Authentication
+  - Realtime Database
 - **Hosting:** Firebase Hosting
 
 ---
 
-## 🔐 Authentication
-- Role-based authentication (Student / Teacher / Admin)
-- Secure login using Firebase Authentication
-- Access control based on user roles
-
----
-
-## 📊 Dashboards
-- Dedicated dashboards for each role
-- Simple and clean UI for easy understanding
-- Fast data retrieval and analysis
+## 📱 Responsive Design
+- Mobile-friendly UI
+- Bottom navigation for easy access
+- Optimized for smartphones and desktops
 
 ---
 
@@ -72,11 +88,12 @@ NEB Analyzer is a web-based academic result analysis system designed to help ins
 ---
 
 ## 🌱 Future Enhancements
-- Graphical charts (bar, pie, line)
-- Rank calculation
-- Semester-wise comparison
-- PDF report generation
-- AI-based performance insights
+- Monthly bill history
+- PDF bill report download
+- Appliance usage suggestions
+- Dark / light mode toggle
+- Admin dashboard for analytics
+- Multi-language support (Tamil / English)
 
 ---
 
@@ -87,5 +104,6 @@ PKN College of Arts & Science
 
 ---
 
-## 📜 License
-This project is developed for academic and educational purposes.
+## 📜 Disclaimer
+This project is developed for **educational purposes only**.  
+Actual electricity bills may vary based on official TNEB charges, subsidies, and policy updates.
